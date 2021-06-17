@@ -20,7 +20,7 @@ public class EnviarMail {
 		// TODO Auto-generated constructor stub
 	}
 	
-	public static Boolean enviarCorreo(Mensaje mens) {
+	/*public static Boolean enviarCorreo(Mensaje mens) {
 			
 		try{
 
@@ -43,7 +43,7 @@ public class EnviarMail {
 			 * estan las direcciones en codigo duro.
 			 */
 			// multiples direcciones
-			String[] to = { mens.getEmail(), "yuliethasd@gmail.com" };
+			/*String[] to = { mens.getEmail(), "yuliethasd@gmail.com" };
 		
 			
 			// arreglo con las direcciones de correo
@@ -87,7 +87,7 @@ public class EnviarMail {
 		}
 		
 	}
-	
+	*/
 	/** Se realiza el envío de los mensajes de la campaña de 
 	 *  manera asincrona
 	 * @param c - Corresponde a la campaña

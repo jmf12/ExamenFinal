@@ -37,6 +37,15 @@
 			</div>
 			<button type="submit" class="btn btn-success">Ingresar</button>
 		</form>
+		<br/>
+		<a href="<%=request.getContextPath()%>/RegistroController"> REGISTRAR USUARIOS</a>
+		<br/>
+		<a href="<%=request.getContextPath()%>/TiposDbController"> REGISTRAR TIPOS DB</a>
+		<br/>
+		<a href="<%=request.getContextPath()%>/TokenController"> REGISTRAR TOKENS</a>
+		<br/>
+		<a href="<%=request.getContextPath()%>/ListarTokenController"> LISTAR TOKENS</a>
+		<br/>
 	</div>
 
 	<script

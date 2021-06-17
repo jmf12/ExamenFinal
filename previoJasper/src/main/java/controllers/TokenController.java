@@ -57,13 +57,22 @@ public class TokenController extends HttpServlet {
 		String pass = request.getParameter("pass");
 		String db = request.getParameter("db");
 		String token = request.getParameter("token");
-		String usuario = request.getParameter("usuario");
-		String state = request.getParameter("state");
+		int usuario = Integer.parseInt(request.getParameter("usuario"));
+		int state = Integer.parseInt(request.getParameter("state"));
 		String type = request.getParameter("type");
 		
 		
 		Connectiontoken t = new Connectiontoken();
 				
+		t.setDb(db);
+		t.setHost(host);
+		t.setPass(pass);
+		
+		Usuario u = new UsuarioDao().find(usuario);
+		
+		t.setUsuario(u);
+		t.setToken(token);
+		t.setState((short)state);
 				
 		tokenDao.insert(t);
 		

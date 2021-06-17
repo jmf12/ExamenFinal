@@ -1,25 +1,29 @@
 package controllers;
 
 import java.io.IOException;
+import java.util.List;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import models.Connectiontoken;
 import services.ConnectiontokenDao;
 
 /**
- * Servlet implementation class ActualizarTokenController
+ * Servlet implementation class ListarTokenController
  */
-@WebServlet("/ActualizarTokenController")
-public class ActualizarTokenController extends HttpServlet {
+@WebServlet("/ListarTokenController")
+public class ListarTokenController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
+       
 	private final ConnectiontokenDao tokenDao;
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public ActualizarTokenController() {
+    public ListarTokenController() {
         super();
         this.tokenDao = new ConnectiontokenDao();
         // TODO Auto-generated constructor stub
@@ -29,9 +33,10 @@ public class ActualizarTokenController extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		String idToken = request.getParameter("idToken");
-		tokenDao.find(idToken);
-		request.getRequestDispatcher("registroToken.jsp").forward(request, response);
+		
+		List<Connectiontoken> tokens = tokenDao.list();
+		request.setAttribute("tokens", tokens);
+		request.getRequestDispatcher("listarTokens.jsp").forward(request, response);
 	}
 
 	/**
