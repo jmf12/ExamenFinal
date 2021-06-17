@@ -5,7 +5,6 @@ import javax.persistence.*;
 import java.util.List;
 
 
-
 /**
  * The persistent class for the typedb database table.
  * 
@@ -16,7 +15,6 @@ public class Typedb implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private String id;
 
 	private String aditional;

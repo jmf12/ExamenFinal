@@ -6,7 +6,6 @@ import java.sql.Timestamp;
 import java.util.List;
 
 
-
 /**
  * The persistent class for the reporte database table.
  * 

@@ -22,31 +22,24 @@
 <body>
 	<div class="container">
 	
-		<form action="<%=request.getContextPath()%>/RegistroController"
+		<form action="<%=request.getContextPath()%>/TiposDbController"
 			method="POST">
-			<h4>Registro Usuario</h4>
+			<h4>Resgitro Typesdb</h4>
 			<div class="input-group mb-2">
-				<span class="input-group-text">Usuario</span> <input type="text"
-					name="usuario" aria-label="First name" class="form-control" />
+				<span class="input-group-text">ID</span> <input type="text"
+					name="id" aria-label="First name" class="form-control" />
 			</div>
 			<div class="input-group mb-2">
-				<span class="input-group-text">Email</span> <input type="email"
-					name="email" aria-label="First name" class="form-control" />
+				<span class="input-group-text">Descripcion</span> <input type="text"
+					name="descripcion" aria-label="First name" class="form-control" />
 			</div>
 			<div class="input-group mb-2">
-				<span class="input-group-text">Password</span> <input name="pass"
-					type="password" aria-label="First name" class="form-control" />
+				<span class="input-group-text">Driver</span> <input type="text"
+					name="driver" aria-label="First name" class="form-control" />
 			</div>
 			<div class="input-group mb-2">
-				<span class="input-group-text">Rol</span> <select name="rol"
-					class="form-select" aria-label="Default select example">
-
-					<option selected>Elige una opción</option>
-					<c:forEach var="rol" items="${roles}">
-						<option value="<c:out value="${rol.id}" />">
-							<c:out value="${rol.description}" /></option>
-					</c:forEach>
-				</select>
+				<span class="input-group-text">Adicional</span> <input name="pass"
+					type="adicional" aria-label="First name" class="form-control" />
 			</div>
 			<button type="submit" class="btn btn-success">Enviar</button>
 		</form>

@@ -5,7 +5,6 @@ import javax.persistence.*;
 import java.sql.Timestamp;
 
 
-
 /**
  * The persistent class for the seguimiento database table.
  * 

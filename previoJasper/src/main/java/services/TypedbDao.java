@@ -1,4 +1,4 @@
-package services; 
+package services;
 
 import models.Typedb;
 import util.Conexion;

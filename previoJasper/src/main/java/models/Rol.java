@@ -5,7 +5,6 @@ import javax.persistence.*;
 import java.util.List;
 
 
-
 /**
  * The persistent class for the rol database table.
  * 
