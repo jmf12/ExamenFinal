@@ -74,5 +74,6 @@ public class RegistroController extends HttpServlet {
 		doGet(request, response);
 		
 	}
+	
 
 }
