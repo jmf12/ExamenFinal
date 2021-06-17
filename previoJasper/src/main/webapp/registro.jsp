@@ -1,6 +1,6 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
+	pageEncoding="ISO-8859-1"%> 
 <!DOCTYPE html>
 <html lang="es">
 
@@ -41,7 +41,7 @@
 				<span class="input-group-text">Rol</span> <select name="rol"
 					class="form-select" aria-label="Default select example">
 
-					<option selected>Elige una opción</option>
+					<option selected>Elige una opciÃ³n</option>
 					<c:forEach var="rol" items="${roles}">
 						<option value="<c:out value="${rol.id}" />">
 							<c:out value="${rol.description}" /></option>
