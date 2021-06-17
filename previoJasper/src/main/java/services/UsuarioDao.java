@@ -5,7 +5,7 @@ import util.Conexion;
 
 public class UsuarioDao extends Conexion<Usuario> implements GenericDao<Usuario> {
 
-	public UsuarioDao() {
+	public UsuarioDao() { 
 		super(Usuario.class);
 	}
 
@@ -24,7 +24,7 @@ public class UsuarioDao extends Conexion<Usuario> implements GenericDao<Usuario>
 					return "SUCCESS";
 
 				} else {
-					return "Contraseña Incorrecta";
+					return "ContraseÃ±a Incorrecta";
 				}
 
 			} else {
