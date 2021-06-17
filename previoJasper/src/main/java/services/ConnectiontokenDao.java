@@ -8,5 +8,5 @@ public class ConnectiontokenDao extends Conexion<Connectiontoken> implements Gen
 	public ConnectiontokenDao() {
 		super(Connectiontoken.class);
 	}
-
+  
 }
